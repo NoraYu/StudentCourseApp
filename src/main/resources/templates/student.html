@@ -1,75 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <div th:insert="base::headbar"></div>
-<style>.bg {
-    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}</style>
+<style>
+    body, html {
+        height: 100%;
+    }
+    .bg {
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 40%;
+    }
+.cd{
+    width:280px;
+    height:280px;}
+
+.tp{
+    z-index: 9999;
+}
+
+</style>
 
 <body>
 
 <div th:insert="base::navbar"></div>
+<div style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg');"class="bg">
 
 <div class="container">
-    <div class="jumbotron">
 
-        Utility: Sizing
-        w-100
-        h-100
-        mw-100
-        mh-100
-        Utility: Spacing
-        m-1 / m-*-#
-        mt-1 / mt-*-#
-        mr-1 / mr-*-#
-        mb-1 / mb-*-#
-        ml-1 / ml-*-#
-        mx-1 / mx-*-#
-        my-1 / my-*-#
-        m-n1 / m-*-n#
-        p-1 / p-*-#
-        pt-1 / pt-*-#
-        pr-1 / pr-*-#
-        pb-1 / pb-*-#
-        pl-1 / pl-*-#
-        px-1 / px-*-#
-        py-1 / py-*-#
-        Utility: Text
-        font-weight-bold
-        font-weight-bolder
-        font-weight-light
-        font-weight-lighter
-        font-weight-normal
-        text-decoration-none
-        font-italic
-        text-monospace
-        text-justify
-        text-nowrap
-        text-*-left
-        text-*-right
-        text-*-center
-        text-lowercase
-        text-uppercase
-        text-capitalize
-        text-truncate
-        text-body
-        text-black-50
-        text-white-50
-        text-muted
-        text-hide
-        text-break
-        Created and maintained by Alexander Rechsteiner.
+        <div class="cd">
+        <div class="card">
+            <div class="card-body"> Margo Kelly</div>
+            <img class="card-img-bottom" width="280" height="280" src="https://avatars0.githubusercontent.com/u/9338027?s=460&v=4" alt="Margo">
+        </div>
+    </div>
 
-        Please send feedback via email or Twitter.
-
-        Check out my Bootstrap templates and Bootstrap themes or learn how to customize Bootstrap (with video).
-
-        Code snippet
-        Copy
-        <table class="table">
+        <br><br><br><div>
+        <table class="table tp">
             <thead class="thead-dark">
             <tr>
                 <th>semester</th>
@@ -78,20 +46,26 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
+            <tr class="table-warning">
                 <th scope="row">1</th>
                 <td>Math</td>
                 <td>A</td>
             </tr>
-            <tr>
+            <tr class="table-warning">
                 <th scope="row">2</th>
                 <td>Physics</td>
                 <td>A</td>
             </tr>
-            <tr>
+            <tr class="table-warning">
                 <th scope="row">3</th>
                 <td>English</td>
                 <td>A</td>
+            </tr>
+            <tr class="table-warning">
+                <th scope="row">Overall GPA</th>
+                <td>4.0</td>
+                <td></td>
+
             </tr>
             </tbody>
         </table>
@@ -99,7 +73,7 @@
 
 
 
-    </div>
+</div></div></div>
     <div th:insert="base::script-boot"></div>
 </body>
 </html>
