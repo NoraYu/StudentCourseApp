@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <title>Student Course App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-</body>
-</html>
+    <style>
+        body, html {
+            height: 100%;
+        }
+        .bg {
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+</style>
+</head>
+
+<body>
+<div th:insert="base::navbar"></div>
+<div style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg');"class="bg">
+                    <div class="container">
+                        <div class="row">
+                                <h2 class="h1-responsive font-weight-bold mt-sm-5">Welcome to Student Course App </h2>
+                        </div>
+                        <hr class="my-2">
+                        <div>
+                                <a href="/classes" class="btn btn-primary btn-lg" role="button" >Choose a course</a>
+                        </div>
+                    </div>
+            </div></div>
+            </div>
+        <div th:insert="base::script-boot"></div>
+    </body>
+    </html>

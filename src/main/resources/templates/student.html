@@ -1,10 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:insert="base::headbar"></div>
+<style>.bg {
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}</style>
+
 <body>
 
+<div th:insert="base::navbar"></div>
+
+<div class="container">
+    <div class="jumbotron">
+
+        Utility: Sizing
+        w-100
+        h-100
+        mw-100
+        mh-100
+        Utility: Spacing
+        m-1 / m-*-#
+        mt-1 / mt-*-#
+        mr-1 / mr-*-#
+        mb-1 / mb-*-#
+        ml-1 / ml-*-#
+        mx-1 / mx-*-#
+        my-1 / my-*-#
+        m-n1 / m-*-n#
+        p-1 / p-*-#
+        pt-1 / pt-*-#
+        pr-1 / pr-*-#
+        pb-1 / pb-*-#
+        pl-1 / pl-*-#
+        px-1 / px-*-#
+        py-1 / py-*-#
+        Utility: Text
+        font-weight-bold
+        font-weight-bolder
+        font-weight-light
+        font-weight-lighter
+        font-weight-normal
+        text-decoration-none
+        font-italic
+        text-monospace
+        text-justify
+        text-nowrap
+        text-*-left
+        text-*-right
+        text-*-center
+        text-lowercase
+        text-uppercase
+        text-capitalize
+        text-truncate
+        text-body
+        text-black-50
+        text-white-50
+        text-muted
+        text-hide
+        text-break
+        Created and maintained by Alexander Rechsteiner.
+
+        Please send feedback via email or Twitter.
+
+        Check out my Bootstrap templates and Bootstrap themes or learn how to customize Bootstrap (with video).
+
+        Code snippet
+        Copy
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th>semester</th>
+                <th>course</th>
+                <th>grade</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Math</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Physics</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>English</td>
+                <td>A</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+
+
+    </div>
+    <div th:insert="base::script-boot"></div>
 </body>
 </html>
